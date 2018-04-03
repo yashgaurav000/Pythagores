@@ -1,6 +1,6 @@
 #-------------------------#
 # Author : Yash Gaurav    #
-# Date : 2/4/2018         #
+# Date : 3/4/2018         #
 # Program : Pythagores    #
 # Written in : Python3    #
 #-------------------------#
@@ -11,10 +11,13 @@ import math,os
 
 def pythagores():
     print("Enter x if the value is unknown")
+    #Take input from the user in integers and if the value is unknown. The user will type x.
     base = input("Enter the value of base : ")
     opp = input("Enter the value of opposite : ")
     hypo = input("Enter the value of hypotenuese : ")
-
+    
+    #condition to check whether the user has input x or an integer.
+    
     if hypo.isalpha() == True:
         base = int(base)
         opp = int(opp)
@@ -35,6 +38,9 @@ def pythagores():
                 print("The value of Opposite is : {}".format(opp))
             else:
                 print("All the sides are already given")
+                
+    # Wait for user input then clear the screen
+    input()              
     os.system('clear')
     pythagores()
 
